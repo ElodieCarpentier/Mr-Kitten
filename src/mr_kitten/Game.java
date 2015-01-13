@@ -770,21 +770,22 @@ public class Game
                 Actors.vadorDialog_a();
                 System.out.println("**************"
                     +nLine+"Would you join this incredible profession ?"
-                    +nLine+"a - Yes, it appears to be a stable situation for my personnal projects."
-                    +nLine+"b - NO !! I've no time for this bumf !");
+                    +nLine+"    a - Yes, it appears to be a stable situation for my personnal projects."
+                    +nLine+"    b - NO !! I've no time for this bumf !");
+                System.out.println("Enter the character please :");
                 String answer_starwars = keyboard.nextLine();
                 if (answer_starwars.equals("a")){
-                System.out.println(" After many years of hard work and after encounter your wife and produced lot of baby ... You died of old age :( R.I.P  ");
-                System.out.println("You loose !! GAME OVER !!");
-                System.exit(1);
+                    System.out.println(" After many years of hard work and after encounter your wife and produced lot of baby ... You died of old age :( R.I.P  ");
+                    System.out.println("You loose !! GAME OVER !!");
+                    System.exit(1);
                 }
                 else if (answer_starwars.equals("b")){
-                Actors.vadorDialog_b();
-                fightPeople();
-                System.out.println("That's was a critical hit for this madness. He was not very bright !"
-                    +nLine+"Congratulations! Vador dropped a potion care and his laser saber become a beautiful lasertail for you !");
-                MrKitten.grabItem("potionCareMax");
-                MrKitten.grabItem("laserTail");
+                    Actors.vadorDialog_b();
+                    fightPeople();
+                    System.out.println("That's was a critical hit for this madness. He was not very bright !"
+                        +nLine+"Congratulations! Vador dropped a potion care and his laser saber become a beautiful lasertail for you !");
+                    MrKitten.grabItem("potionCareMax");
+                    MrKitten.grabItem("laserTail");
                 }
                 break;
             case "theCloset" : 
